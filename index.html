@@ -27,7 +27,7 @@
 
         iterations = 0;
         const checkName = function() {
-            while (myName === "") {
+            while (myName === "" && iterations < 5) {
                 message = "For real";
                 for (i=0; i<iterations; i++) {
                     message += " for real";
@@ -36,11 +36,16 @@
                 myName = prompt(message);
                 iterations++;
             }
+
+            if (iterations === 5) {
+                alert("Your name is now Chris.")
+                myName = "Chris";
+            }
         }
 
         checkName();
 
-        alert("Hello, " + myName);
+        alert("Hello, " + myName + "!");
     </script>
 
 </body>
