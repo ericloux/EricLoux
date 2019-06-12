@@ -6,18 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
+    <script src="https://kit.fontawesome.com/1832578556.js"></script>
 </head>
 
 <body>
     <p>
         <nav id="navigation">
-            <a href="/projects/index.html">PROJECTS</a>
-            <a href="/blog/index.html">BLOG</a>
-            <a href="/contact/index.html">CONTACT</a>
+            <a href="/projects/index.html"><i class="fas fa-laptop-code"></i>PROJECTS</a>
+            <a href="/blog/index.html"><i class="fas fa-book"></i>BLOG</a>
+            <a href="/contact/index.html"><i class="far fa-envelope-open"></i>CONTACT</a>
         </nav>
         More information to follow.    
     </p>
+
+    <script type="text/javascript">
+    
+        let myName = prompt("What is your name?");
+
+        iterations = 0;
+        const checkName = function() {
+            while (myName === "") {
+                message = "For real";
+                for (i=0; i<iterations; i++) {
+                    message += " for real";
+                }
+                message += ", what is your name?";
+                myName = prompt(message);
+                iterations++;
+            }
+        }
+
+        checkName();
+
+        alert("Hello, " + myName);
+    </script>
+
 </body>
 
 </html>
