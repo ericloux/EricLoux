@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+        let myName = prompt("What is your name?");
+
+        iterations = 0;
+        const checkName = function() {
+            while (myName === "" && iterations < 5) {
+                message = "For real";
+                for (i=0; i<iterations; i++) {
+                    message += " for real";
+                }
+                message += ", what is your name?";
+                myName = prompt(message);
+                iterations++;
+            }
+
+            if (iterations === 5) {
+                alert("Your name is now Chris.")
+                myName = "Chris";
+            }
+        }
+
+        checkName();
+
+        alert("Hello, " + myName + "!");
+    </script>
+</body>
+</html>
