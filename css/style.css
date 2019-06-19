@@ -7,6 +7,12 @@ a {
     color: rgb(68, 17, 209)
 }
 
+header {
+    font-size: 200%;
+    background-color: rgb(145, 157, 226);
+    text-align:center;
+}
+
 .contentWrapper {
     display: grid;
     grid-gap: 0px;
@@ -15,7 +21,7 @@ a {
     padding: 10px 0px;
     color: black;
 }
-  
+
 .gridWrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -35,4 +41,22 @@ a {
     padding: 5px 20px;
     grid-column:1/3;
     grid-row:2;
+}
+
+.navTitle {
+    text-align:center;
+}
+
+.navItem {
+    border: solid black 1px;
+}
+
+.contactForm {
+    width:100%;
+    text-align:center;
+}
+
+.contactItem {
+    margin:5px;
+    text-align:center;
 }
