@@ -18,7 +18,7 @@ header {
     grid-gap: 0px;
     grid-template-columns: 1fr 4fr 1fr;
     background-color: slategray;
-    padding: 10px 0px;
+    padding: 10px 10px;
     color: black;
 }
 
@@ -49,6 +49,7 @@ header {
 
 .navItem {
     border: solid black 1px;
+    list-style:none;
 }
 
 .contactForm {
@@ -59,4 +60,31 @@ header {
 .contactItem {
     margin:5px;
     text-align:center;
+}
+
+.blogArticle {
+    margin: 25px;
+}
+
+.CSSButton {
+    background: #4411D1;
+    padding: 5px;
+    margin:auto;
+    border: solid black 1px;
+    text-align: center;
+    width: 150px;
+}
+
+.buttonLink {
+    color:black;
+}
+
+.flexList {
+    display:flex;
+    justify-content: center;
+}
+
+.centered {
+    text-align:center;
+    margin:auto;
 }

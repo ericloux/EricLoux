@@ -9,11 +9,12 @@
 <body>
     <script type="text/javascript">
     
-        let myName = prompt("What is your name?");
+        let myName = "";
+        myName = prompt("What is your name?");
 
         iterations = 0;
         const checkName = function() {
-            while (myName === "" && iterations < 5) {
+            while ((myName === "" || myName === null) && iterations < 5) {
                 message = "For real";
                 for (i=0; i<iterations; i++) {
                     message += " for real";
@@ -33,5 +34,7 @@
 
         alert("Hello, " + myName + "!");
     </script>
+    <a href = ".."> back </a>
+
 </body>
 </html>
