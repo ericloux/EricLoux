@@ -43,6 +43,10 @@ header {
     grid-row:2;
 }
 
+.navBox {
+    //background-color: rgb(145, 157, 226);
+}
+
 .navTitle {
     text-align:center;
 }
@@ -50,6 +54,10 @@ header {
 .navItem {
     border: solid black 1px;
     list-style:none;
+    margin-right:25px;
+    margin-bottom:5px;
+    padding: 5px;
+    background-color: rgb(145, 157, 226);
 }
 
 .contactForm {
@@ -63,6 +71,10 @@ header {
 }
 
 .blogArticle {
+    margin: 25px;
+}
+
+.projectArticle{
     margin: 25px;
 }
 
@@ -87,4 +99,36 @@ header {
 .centered {
     text-align:center;
     margin:auto;
+}
+
+.personalityGrid {
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    grid-gap: 5px;
+}
+
+.personalityBox {
+    text-align: center;
+    background-color: rgb(145, 157, 226);
+    border: solid black 1px;
+    height: 40px;
+}
+
+.personalityArticleGrid{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.personalityArticle{
+    background-color: rgb(145, 157, 226);
+    padding:15px;
+    margin-bottom:25px;
+}
+
+.personalityArticleTitle{
+    text-align:center;
+}
+
+.personalityArticleBody {
+    padding:15px;
 }
