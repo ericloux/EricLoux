@@ -792,7 +792,6 @@ function loop (t) {
             currentInterval = 0;
         }
         currentInterval++;
-        resetKeys();
     } else {
         drawBoard();
         drawPiece();
@@ -808,6 +807,7 @@ function loop (t) {
             score = 0;
         }
     }
+    resetKeys();
 }
 
 randomPiece();
