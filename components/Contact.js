@@ -1,3 +1,4 @@
+export default `
 <head>
         <link rel = "stylesheet" type = "text/css" href = "../css/style.css" />
 
@@ -64,4 +65,4 @@
 
         <div class="contentMargin"></div>
     </div>
-</body>
+</body>`

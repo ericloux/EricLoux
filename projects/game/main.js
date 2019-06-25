@@ -2,8 +2,6 @@ const canvas = document.querySelector("#board canvas");
 const ctx = canvas.getContext("2d");
 const { width:w, height:h } = canvas;
 
-console.log(canvas.ctx);
-
     // start positions in pixels for drawing squares
 const tileStartX = 22;
 const tileStartY = 22;
@@ -805,6 +803,8 @@ function loop (t) {
             level = 1;
             linesCleared = 0;
             score = 0;
+            dropInterval = 120;
+            currentInterval = 0;
         }
     }
     resetKeys();
