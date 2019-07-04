@@ -1,4 +1,4 @@
-export default `
+export default (state) => `
 <footer>
-    DEFAULT FOOTER
+    <h4>${state.title}</h4>
 </footer>`;

@@ -1,4 +1,4 @@
-export default `
+export default (state) => `
 <header>
-    DEFAULT HEADER
+<h4>${state.title}</h4>
 </header>`;

@@ -6,12 +6,31 @@ import Footer from "./components/Footer.js";
 
 const root = document.querySelector("#root");
 
-function render() {
+let state = {
+    Navigation: {
+        title: `Navigation title`
+    },
+    
+    Header: {
+        title: `Header title`
+    },
+
+    Content: {
+        title: `Content title`
+    },
+
+    Footer: {
+        title: `Footer title`
+    },
+};
+
+function render(state) {
+    console.log("this is my state", state);
     root.innerHTML = `
-        ${Navigation}
-        ${Header}
-        ${Content}
-        ${Footer}`;
+        ${Navigation(state.Navigation)}
+        ${Header(state.Header) }
+        ${Content(state.Content)}
+        ${Footer(state.Footer)}`;
 }
 
-render();
+render(state);
